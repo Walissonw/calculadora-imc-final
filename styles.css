@@ -1,0 +1,91 @@
+/* Estilos para o corpo da página */
+body {
+    background-image: url('/imagens/backgroundimg.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a tela */
+    background-attachment: fixed; /* Fixo ao rolar a página */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Margem zero */
+    padding: 0; /* Preenchimento zero */
+    display: flex; /* Flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura da viewport */
+    position: relative; /* Para posicionamento do fundo desfocado */
+    overflow: hidden; /* Esconder qualquer transbordamento */
+}
+
+/* Camada de fundo desfocada */
+.background {
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Alinhado ao topo */
+    left: 0; /* Alinhado à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-image: url('/imagens/backgroundimg.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a tela */
+    background-attachment: fixed; /* Fixo ao rolar a página */
+    filter: blur(4px); /* Desfoque reduzido */
+    z-index: -1; /* Colocar atrás do conteúdo */
+}
+
+/* Estilos para o título */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte do título */
+    text-align: center; /* Centralizado */
+    color: #f51414; /* Cor do texto */
+}
+
+/* Estilos para a calculadora */
+.calculator {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra da caixa */
+    max-width: 400px; /* Largura máxima */
+    width: 90%; /* Largura relativa */
+    min-width: 300px; /* Largura mínima */
+    z-index: 1; /* Colocar na frente do fundo */
+    position: relative; /* Posicionamento relativo */
+}
+
+/* Estilos para os campos de entrada e seleção */
+input[type="number"], select {
+    width: 100%; /* Largura total */
+    margin-bottom: 10px; /* Espaço abaixo */
+    padding: 2px; /* Preenchimento interno */
+    height: 30px; /* Altura */
+}
+
+/* Estilos para a div de botões */
+#botoes {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre os botões */
+}
+
+/* Estilos para os botões */
+button {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #4caf50; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de mão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilos para os botões ao passar o mouse */
+button:hover {
+    background-color: #45a051; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos para o resultado */
+#resultado {
+    margin-top: 20px; /* Espaço acima */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Disposição em coluna */
+}
