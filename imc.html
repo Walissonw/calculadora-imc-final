@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt"> <!-- Define a linguagem do documento como português -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora IMC</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura o viewport para dispositivos móveis -->
+    <title>Calculadora IMC</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Inclui o arquivo de estilo externo -->
 </head>
 <body>
-    <div class="background"></div>
-    <div class="calculator">
-        <h1>Calculadora IMC</h1>
-        <label for="altura">Altura (cm):</label>
-        <input type="number" id="altura" placeholder="Altura em cm" required>
-        <label for="peso">Peso (kg):</label>
-        <input type="number" id="peso" placeholder="Peso em kg" required>
-        <label for="genero">Gênero:</label>
-        <select id="genero">
-            <option value="male">Masculino</option>
-            <option value="female">Feminino</option>
+    <div class="background"></div> <!-- Div para o fundo desfocado -->
+    <div class="calculator"> <!-- Div que contém a calculadora -->
+        <h1>Calculadora IMC</h1> <!-- Título da calculadora -->
+        <label for="altura">Altura (cm):</label> <!-- Rótulo para o campo de altura -->
+        <input type="number" id="altura" placeholder="Altura em cm" required> <!-- Campo de entrada para a altura -->
+        <label for="peso">Peso (kg):</label> <!-- Rótulo para o campo de peso -->
+        <input type="number" id="peso" placeholder="Peso em kg" required> <!-- Campo de entrada para o peso -->
+        <label for="genero">Gênero:</label> <!-- Rótulo para o campo de gênero -->
+        <select id="genero"> <!-- Menu de seleção para o gênero -->
+            <option value="male">Masculino</option> <!-- Opção masculina -->
+            <option value="female">Feminino</option> <!-- Opção feminina -->
         </select>
-        <div id="botoes">
-            <button onclick="calcularIMC()">Calcular IMC</button>
-            <button onclick="limparIMC()">Limpar</button>
+        <div id="botoes"> <!-- Div que contém os botões -->
+            <button onclick="calcularIMC()">Calcular IMC</button> <!-- Botão para calcular o IMC -->
+            <button onclick="limparIMC()">Limpar</button> <!-- Botão para limpar os campos -->
         </div>
-        <div id="resultado"></div>
+        <div id="resultado"></div> <!-- Div para exibir o resultado do IMC -->
     </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Inclui o arquivo de script externo -->
 </body>
 </html>
